@@ -7,4 +7,4 @@ Simple Notices
 
 2�nderung Feature Impelementiert
 
-2 Aenderung von David
+2 Aenderung von Dav
