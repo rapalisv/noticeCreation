@@ -3,6 +3,8 @@ Simple Notices
 
 ####
 
-Änderng von Rapalis
+ï¿½nderng von Rapalis
 
-2Änderung Feature Impelementiert
+2ï¿½nderung Feature Impelementiert
+
+2 Aenderung von David
