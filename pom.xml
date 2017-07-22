@@ -1,0 +1,72 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<!-- Metha Data Project -->
+	<groupId>com.david-vitali.com</groupId>
+	<artifactId>noticeCreation</artifactId>
+	<packaging>pom</packaging>
+	<name>Notices Parent Pom</name>
+
+	<!-- Children / Modules -->
+	<modules>
+		<module>notices-data</module>
+		<module>notices-domain</module>
+		<module>notices-web</module>
+	</modules>
+
+	<!-- Parent -->
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.4.RELEASE</version>
+	</parent>
+
+	<!-- Properties -->
+	<properties>
+		<lombok.version>1.16.16</lombok.version>
+		<h2.version>1.4.193</h2.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.projectlombok</groupId>
+				<artifactId>lombok</artifactId>
+				<version>${lombok.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.david-vitali.com</groupId>
+				<artifactId>notices-data</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>com.david-vitali.com</groupId>
+				<artifactId>notices-domain</artifactId>
+			</dependency>
+			<dependency>
+				<groupId>com.h2database</groupId>
+				<artifactId>h2</artifactId>
+				<version>${h2.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<build>
+		<!-- PlugIn Management -->
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.springframework.boot</groupId>
+					<artifactId>spring-boot-maven-plugin</artifactId>
+				</plugin>
+				<plugin>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<configuration>
+						<source>1.8</source>
+						<target>1.8</target>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+	</build>
+</project>
