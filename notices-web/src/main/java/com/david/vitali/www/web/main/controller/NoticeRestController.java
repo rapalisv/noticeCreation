@@ -4,7 +4,9 @@ import java.time.LocalDate;
 import java.util.Date;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.david.vitali.www.web.data.entity.NoticeEntity;
@@ -21,7 +23,7 @@ public class NoticeRestController {
     return "Hello Notices!!!";
   }
 
-  @RequestMapping("/createNotice")
+  @RequestMapping(value = "/createNotice", method = RequestMethod.POST)
   public NoticeEntity createNotice() {
     NoticeEntity notice = NoticeEntity.builder()
         .creationDate(new Date())
@@ -29,5 +31,11 @@ public class NoticeRestController {
         .build();
 
     return noticeRepo.save(notice);
+  }
+  
+  //Hol mir die Notiz mit übergebener ID als URL localhost:9191/x
+  @RequestMapping(value = "/{id}")
+  public NoticeEntity getNotice(@PathVariable Long id) {
+	  return noticeRepo.findOne(id);
   }
 }
