@@ -10,7 +10,7 @@
 
 	<!-- Children / Modules -->
 	<modules>
-		<module>notices-data</module>
+		<module>notices-persistance</module>
 		<module>notices-domain</module>
 		<module>notices-web</module>
 	</modules>
@@ -26,6 +26,7 @@
 	<properties>
 		<lombok.version>1.16.16</lombok.version>
 		<h2.version>1.4.193</h2.version>
+		<mapstruct.version>1.2.0.Beta1</mapstruct.version>
 	</properties>
 
 	<dependencyManagement>
@@ -37,16 +38,32 @@
 			</dependency>
 			<dependency>
 				<groupId>com.david-vitali.com</groupId>
-				<artifactId>notices-data</artifactId>
+				<artifactId>notices-persistance</artifactId>
+				<version>1.5.4.RELEASE</version>
 			</dependency>
 			<dependency>
 				<groupId>com.david-vitali.com</groupId>
 				<artifactId>notices-domain</artifactId>
+				<version>1.5.4.RELEASE</version>
 			</dependency>
 			<dependency>
 				<groupId>com.h2database</groupId>
 				<artifactId>h2</artifactId>
 				<version>${h2.version}</version>
+			</dependency>
+			<!-- MapStruct Support For Lombok. Note that Lombok 1.16.14 or newer is 
+				required -->
+			<dependency>
+				<groupId>org.mapstruct</groupId>
+				<artifactId>mapstruct</artifactId>
+				<version>${mapstruct.version}</version>
+				<scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.mapstruct</groupId>
+				<artifactId>mapstruct-processor</artifactId>
+				<version>${mapstruct.version}</version>
+				<scope>provided</scope>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
