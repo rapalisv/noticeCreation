@@ -1,10 +1,20 @@
-# noticeCreation
-Simple Notices 
+# Notice Creation
 
-####
+First Project. 
 
-�nderng von Rapalis
+The Goal Of This Project Is To Learn Full Stack Development.
 
-2�nderung Feature Impelementiert
 
-2 Aenderung 
+### Frameworks Backend	
+		
+			Spring Boot
+			Mapstruct
+			Lombok
+
+### Frameworks Frontend
+  
+			Vue.js
+			Apache Cordova
+			Framework7
+
+																Created By David And Vitali. 

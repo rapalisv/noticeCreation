@@ -14,6 +14,8 @@ spring:
     username: notices
     url: jdbc:h2:mem:notices;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;;INIT=CREATE SCHEMA IF NOT EXISTS NOTICES\;SET SCHEMA NOTICES\;
     driver-class-name: org.h2.Driver
+    data:
+    - classpath*:development/data/data.sql
   h2:
     console:
       path: /console
