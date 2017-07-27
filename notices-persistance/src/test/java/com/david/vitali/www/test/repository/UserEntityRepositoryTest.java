@@ -17,7 +17,7 @@ import com.david.vitali.www.test.AbstractPersistanceTest;
 import lombok.extern.log4j.Log4j;
 
 /**
- * UserEntityRepository Test Class.
+ * UserEntityRepository Test Class. Crud Operation.
  * 
  * @author rapalisv Date: 26.07.2017
  *
