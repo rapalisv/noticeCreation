@@ -5,6 +5,7 @@ First Project.
 The Goal Of This Project Is To Learn Full Stack Development.
 
 
+<<<<<<< HEAD
 ### Frameworks Backend	
 		
 			Spring Boot
@@ -18,3 +19,5 @@ The Goal Of This Project Is To Learn Full Stack Development.
 			Framework7
 
 																Created By David And Vitali. 
+=======
+

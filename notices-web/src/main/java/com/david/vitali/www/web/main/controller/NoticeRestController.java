@@ -20,6 +20,11 @@ import com.david.vitali.www.persistance.repository.INoticeEntityRepository;
 public class NoticeRestController {
   @Autowired
   private INoticeEntityRepository iNoticesRepository;
+  
+  @RequestMapping
+  public String welcome() {
+	  return "Welcome";
+  }
 
   @RequestMapping(value = "/createNotice", method = RequestMethod.POST)
   public NoticeEntity createNotice() {
