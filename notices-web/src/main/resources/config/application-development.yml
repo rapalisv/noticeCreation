@@ -19,3 +19,7 @@ spring:
   h2:
     console:
       path: /console
+development:
+  data-set:
+    user: 5
+    notice: 5

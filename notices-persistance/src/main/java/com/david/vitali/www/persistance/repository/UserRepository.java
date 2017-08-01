@@ -7,5 +7,5 @@ import com.david.vitali.www.persistance.entity.UserEntity;
 
 @RepositoryRestResource
 public interface UserRepository extends PagingAndSortingRepository<UserEntity, Long> {
-
+  
 }

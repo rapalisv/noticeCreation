@@ -29,10 +29,13 @@ public class NoticeEntity{
   @GeneratedValue(strategy = GenerationType.AUTO)
   @Column(name = "ID", nullable = false, unique = true, updatable = false)
   private Long id;
+  
   @Column(name = "NOTICE_NAME", length = 45, unique = true, updatable = true)
   private String noticeName;
+  
   @Column(name = "CREATION_DATE", nullable = false)
   private Date creationDate;
+  
   @Column(name = "UPDATE_DATE")
   private Date updateDate;
 }

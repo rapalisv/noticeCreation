@@ -33,7 +33,7 @@ public class UserEntityRepositoryTest extends AbstractPersistanceTest {
   @Before
   public void beforTest() {
     userEntity = UserEntity.builder()
-        .email("usermax@email.com")
+        .email("usermax" + new Date().getTime() + "+@email.com")
         .name("Max")
         .password("Password")
         .registrationDate(new Date())

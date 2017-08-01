@@ -13,6 +13,7 @@
 		<module>notices-persistance</module>
 		<module>notices-domain</module>
 		<module>notices-web</module>
+		<module>notices-utility</module>
 	</modules>
 
 	<!-- Parent -->
@@ -44,6 +45,11 @@
 			<dependency>
 				<groupId>com.david-vitali.com</groupId>
 				<artifactId>notices-domain</artifactId>
+				<version>1.5.4.RELEASE</version>
+			</dependency>
+			<dependency>
+				<groupId>com.david-vitali.com</groupId>
+				<artifactId>notices-utility</artifactId>
 				<version>1.5.4.RELEASE</version>
 			</dependency>
 			<dependency>
