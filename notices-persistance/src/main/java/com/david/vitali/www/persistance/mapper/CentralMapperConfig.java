@@ -1,4 +1,4 @@
-package com.david.vitali.www.domain.mapper;
+package com.david.vitali.www.persistance.mapper;
 
 import org.mapstruct.MapperConfig;
 import org.mapstruct.MappingInheritanceStrategy;

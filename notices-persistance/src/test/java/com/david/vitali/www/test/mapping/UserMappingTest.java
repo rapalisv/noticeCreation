@@ -7,10 +7,10 @@ import org.junit.Before;
 import org.junit.Test;
 import org.mapstruct.factory.Mappers;
 
-import com.david.vitali.www.domain.mapper.model.IUserMapper;
 import com.david.vitali.www.domain.model.User;
 import com.david.vitali.www.persistance.entity.NoticeEntity;
 import com.david.vitali.www.persistance.entity.UserEntity;
+import com.david.vitali.www.persistance.mapper.model.IUserMapper;
 
 import lombok.extern.log4j.Log4j;
 
@@ -44,7 +44,7 @@ public class UserMappingTest {
   @Test
   public void test() {
     assertNotNull(userMapper);
-    user = userMapper.userToUserEntity(userEntity);
+    user = userMapper.userEntityToUser(userEntity);
     assertNotNull(user);
     log.info("Entity User Was Mapped To User: " + user);
   }

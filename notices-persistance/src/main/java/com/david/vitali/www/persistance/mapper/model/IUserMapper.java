@@ -1,10 +1,10 @@
-package com.david.vitali.www.domain.mapper.model;
+package com.david.vitali.www.persistance.mapper.model;
 
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
-import com.david.vitali.www.domain.mapper.CentralMapperConfig;
 import com.david.vitali.www.domain.model.User;
 import com.david.vitali.www.persistance.entity.UserEntity;
+import com.david.vitali.www.persistance.mapper.CentralMapperConfig;
 
 /**
  * User Mapping To UserEntity.
@@ -16,7 +16,7 @@ import com.david.vitali.www.persistance.entity.UserEntity;
 public interface IUserMapper {
   IUserMapper INSTANCE = Mappers.getMapper(IUserMapper.class);
 
-  User userToUserEntity(UserEntity userEntity);
+  User userEntityToUser(UserEntity userEntity);
 
-  UserEntity userEntityToUser(User user);
+  UserEntity userToUserEntity(User user);
 }

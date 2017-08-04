@@ -1,10 +1,10 @@
-package com.david.vitali.www.domain.mapper.model;
+package com.david.vitali.www.persistance.mapper.model;
 
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
-import com.david.vitali.www.domain.mapper.CentralMapperConfig;
 import com.david.vitali.www.domain.model.Notice;
 import com.david.vitali.www.persistance.entity.NoticeEntity;
+import com.david.vitali.www.persistance.mapper.CentralMapperConfig;
 
 
 /**
