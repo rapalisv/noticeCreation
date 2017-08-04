@@ -1,4 +1,4 @@
-package com.david.vitali.www.domain.mapper;
+package com.david.vitali.www.persistance.mapper;
 
 import java.util.IdentityHashMap;
 import java.util.Map;

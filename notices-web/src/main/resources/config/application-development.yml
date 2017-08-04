@@ -19,6 +19,8 @@ spring:
   h2:
     console:
       path: /console
+security:
+  enable-csrf: true
 development:
   data-set:
     user: 5

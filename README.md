@@ -5,19 +5,18 @@ First Project.
 The Goal Of This Project Is To Learn Full Stack Development.
 
 
-<<<<<<< HEAD
 ### Frameworks Backend	
 		
-			Spring Boot
-			Mapstruct
-			Lombok
+			##Spring Boot (Web,Data,Test)
+				Mapstruct
+				Lombok
 
 ### Frameworks Frontend
   
-			Vue.js
-			Apache Cordova
-			Framework7
+			##Vue.js
+				BootsrapVue
+				
 
 																Created By David And Vitali. 
-=======
+
 
