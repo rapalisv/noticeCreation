@@ -6,11 +6,10 @@ import {InputChecker} from '../utility/utility-exporter'
 export class UserService {
 
   /* Create User */
-  static createUser (user = null) {
-    if (InputChecker.checkInputName(user.name)) {
-
-    }
-
-    axios.post(REST_API_PATH.BASE_URL + REST_API_PATH.USER_REST_API_PATH.POST.CREATE_USER, user)
+  static async createUser (user = null) {
+    InputChecker.checkInputEmail(user.email)
+    InputChecker.checkInputName(user.name)
+    InputChecker.checkInputPassword(user.password)
+    return axios.post(REST_API_PATH.BASE_URL + REST_API_PATH.USER_REST_API_PATH.POST.CREATE_USER, user)
   }
 }
