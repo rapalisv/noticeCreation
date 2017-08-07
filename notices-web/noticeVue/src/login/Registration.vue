@@ -1,7 +1,7 @@
 <template>
   <div class="container-fluid margin-top">
     <!-- Standard -->
-    <b-alert :show="showAlert" :variant="variantAlert">
+    <b-alert :show="showAlert" :variant="variantAlert" dismissible>
       <h3>{{alertMsg}}</h3>
     </b-alert>
     <b-card header="Registration" header-variant="success" class="mb-2 color-font-white" title="" sub-title="" show-footer>
@@ -36,6 +36,17 @@ export default {
       alertMsg: ''
     }
   },
+  watch: {
+    'user.name' (newName) {
+      this.updateAlert()
+    },
+    'user.email' (newEmail) {
+      this.updateAlert()
+    },
+    'user.password' (newPassword) {
+      this.updateAlert()
+    }
+  },
   methods: {
     async createUser () {
       try {
@@ -44,7 +55,7 @@ export default {
         this.updateAlert(true, 'success', `User Was Seccussfully Created`)
       } catch (error) {
         console.log(error)
-        this.updateAlert(true, 'danger', error)
+        this.updateAlert(true, 'danger', '' + error)
       }
     },
     updateAlert (show = false, variant = 'default', msg = '') {
